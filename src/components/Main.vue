@@ -3,6 +3,12 @@
     <div
       class="full-page"
     >
+      <!-- <v-img
+        src="../assets/back2.jpeg"
+        aspect-ratio="1"
+        contain
+        class="logo-img"
+      /> -->
       <!-- <v-row
         justify="center"
         align="center"
@@ -44,7 +50,7 @@ export default {
 <style scoped>
 
 .logo-img {
-    /* position: absolute; */
+    position: absolute;
     top: 25%;
     left: 7%;
 }

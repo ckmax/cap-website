@@ -134,6 +134,7 @@ export default Vue.extend({
 body,
 html {
   cursor: none;
+  background: white;
   // background: url('./assets/keyboard.jpeg') no-repeat center center fixed;
   // height: 100vh;
   // background-position: center;
@@ -202,10 +203,11 @@ html {
 }
 
 .v-application--wrap {
-  background: url('./assets/keyboard.jpeg') no-repeat center center fixed;
+  background: url('./assets/back2.jpeg') no-repeat center center fixed;
+  background-color: white;
   height: 100vh;
   background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: contain;
 }
 </style>
