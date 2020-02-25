@@ -21,7 +21,10 @@
             {{ year.header }}
           </h2>
           <div class="white--text">
-            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola imperdiet nec ut, sed euismod convenire principes at. Est et nobis iisque percipit, an vim zril disputando voluptatibus, vix an salutandi sententiae.
+            Lorem ipsum dolor sit amet, no nam oblique veritus. Commune scaevola
+            imperdiet nec ut, sed euismod convenire principes at. Est et nobis
+            iisque percipit, an vim zril disputando voluptatibus, vix an
+            salutandi sententiae.
           </div>
         </div>
       </v-timeline-item>
@@ -34,36 +37,36 @@ export default {
   data: () => ({
     years: [
       {
-        color: 'cyan',
-        year: '1993',
-        header: 'Born',
-        text: ''
+        color: "cyan",
+        year: "1993",
+        header: "Born",
+        text: ""
       },
       {
-        color: 'green',
-        year: '2002',
-        header: 'Arrival to the US',
-        text: ''
+        color: "green",
+        year: "2002",
+        header: "Arrival to the US",
+        text: ""
       },
       {
-        color: 'pink',
-        year: '1980',
-        header: '',
-        text: ''
+        color: "pink",
+        year: "1980",
+        header: "",
+        text: ""
       },
       {
-        color: 'amber',
-        year: '1990',
-        header: '',
-        text: ''
+        color: "amber",
+        year: "1990",
+        header: "",
+        text: ""
       },
       {
-        color: 'orange',
-        year: '2000',
-        header: '',
-        text: ''
+        color: "orange",
+        year: "2000",
+        header: "",
+        text: ""
       }
     ]
   })
-}
+};
 </script>

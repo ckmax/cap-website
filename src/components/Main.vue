@@ -1,12 +1,10 @@
 <template>
   <v-container fluid>
-    <div
-      class="full-page"
-    >
+    <div class="full-page">
       <!-- <v-img
         src="../assets/back2.jpeg"
-        aspect-ratio="1"
         contain
+        height="300"
         class="logo-img"
       /> -->
       <!-- <v-row
@@ -42,24 +40,23 @@
 </template>
 
 <script>
-export default {
-
-}
+// export default {};
+//
 </script>
 
 <style scoped>
-
 .logo-img {
-    position: absolute;
-    top: 25%;
-    left: 7%;
+  position: absolute;
+  top: 50%;
+  left: 40%;
 }
 
 .full-page {
   /* background: url('../assets/keyboard.jpeg') no-repeat center center fixed; */
-  height: 100vh;
-  background-position: center;
+  height: 90vh;
+  position: relative;
+  /* background-position: center;
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: cover; */
 }
 </style>

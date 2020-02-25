@@ -1,12 +1,8 @@
 <template>
   <div class="home">
-    <!-- <img alt="Vue logo" src="../assets/logo.png"> -->
-    <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
     <v-container fluid>
-      <!-- <v-overlay :opacity=".20">
-      </v-overlay> -->
       <v-row>
-        <v-col sm="6">
+        <v-col sm="12">
           <v-hover v-slot:default="{ hover }">
             <v-card
               v-scroll-reveal.reset="{ delay: 100 }"
@@ -14,16 +10,29 @@
               :elevation="hover ? 12 : 2"
               class="mx-auto"
               height="50vh"
+              color="grey"
             >
-            <!-- <v-img src="../assets/cnb.jpeg" height="40vh" width="40vw">
+              <!-- <v-img src="../assets/cnb.jpeg" height="40vh" width="40vw">
             </v-img> -->
             </v-card>
           </v-hover>
         </v-col>
-        <v-col
-          sm="6"
-          color="blue"
-        >
+        <v-col sm="12">
+          <v-hover v-slot:default="{ hover }">
+            <v-card
+              v-scroll-reveal.reset="{ delay: 100 }"
+              tile
+              :elevation="hover ? 12 : 2"
+              class="mx-auto"
+              height="50vh"
+              color="grey"
+            >
+              <!-- <v-img src="../assets/cnb.jpeg" height="40vh" width="40vw">
+            </v-img> -->
+            </v-card>
+          </v-hover>
+        </v-col>
+        <v-col sm="6" color="blue">
           <v-card
             v-scroll-reveal.reset="{ delay: 150 }"
             hover
@@ -35,14 +44,8 @@
           </v-card>
         </v-col>
       </v-row>
-      <v-row
-        justify="center"
-      >
-        <v-col
-          lg="6"
-          sm="12"
-          color="blue"
-        >
+      <v-row justify="center">
+        <v-col lg="6" sm="12" color="blue">
           <v-card
             v-scroll-reveal.reset="{ delay: 100 }"
             hover
@@ -53,11 +56,7 @@
             </v-img> -->
           </v-card>
         </v-col>
-        <v-col
-          lg="6"
-          sm="12"
-          color="blue"
-        >
+        <v-col lg="6" sm="12" color="blue">
           <v-card
             v-scroll-reveal.reset="{ delay: 150 }"
             hover
@@ -78,10 +77,9 @@
 // @ is an alias to /src
 
 export default {
-  name: 'Home',
-  components: {
-  }
-}
+  name: "Home",
+  components: {}
+};
 </script>
 
 <style scoped>
