@@ -2,9 +2,9 @@
   <v-app>
     <Toolbar />
     <v-content>
-      <Main />
-      <Panels />
-      <Timeline />
+      <Main id="main" />
+      <Panels id="life" />
+      <Timeline id="projects" />
       <!-- <div
         :class="[
           'g-cursor',

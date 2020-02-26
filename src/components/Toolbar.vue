@@ -11,20 +11,23 @@
         <v-toolbar-title class="typing typed-text black--text" />
       </vue-typed-js>
       <v-spacer />
-      <v-btn light text tile :ripple="false" class="ma-8"
-        ><span class="hvr-underline-from-left">About</span></v-btn
+      <v-btn light text tile :ripple="false" class="ma-8" v-scroll-to="'#life'"
+        ><span class="hvr-underline-from-left">Life</span></v-btn
+      >
+      <v-btn light text tile class="ma-8" v-scroll-to="'#projects'"
+        ><span class="hvr-underline-from-left">Projects</span></v-btn
       >
       <v-btn light text tile class="ma-8"
-        ><span class="hvr-underline-from-left">Project</span></v-btn
-      >
-      <v-btn light text tile class="ma-8"
-        ><span class="hvr-underline-from-left">Timeline</span></v-btn
+        ><span class="hvr-underline-from-left">Over time</span></v-btn
       >
     </v-row>
   </v-app-bar>
 </template>
 
 <style lang="scss" scoped>
+/**
+    Using http://ianlunn.github.io/Hover/
+*/
 // Change style of typed text
 .typed-text {
   font-weight: 500;

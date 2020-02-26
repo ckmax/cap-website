@@ -5,11 +5,13 @@ import store from "./store";
 import vuetify from "./plugins/vuetify";
 
 // Third-party packages
+import VueScrollTo from "vue-scrollto";
 import VueTypedJs from "vue-typed-js";
 import VueScrollReveal from "vue-scroll-reveal";
 
 Vue.use(VueScrollReveal);
 Vue.use(VueTypedJs);
+Vue.use(VueScrollTo);
 
 Vue.config.productionTip = false;
 
