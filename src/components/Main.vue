@@ -1,6 +1,14 @@
 <template>
   <v-container fluid>
     <div class="full-page">
+      <!-- <v-card class="mx-auto" outlined>
+        <v-img
+          src="../assets/back4.jpeg"
+          width="300"
+          contain
+          aspect-ratio="1"
+        />
+      </v-card> -->
       <!-- <v-img
         src="../assets/back2.jpeg"
         contain

@@ -1,6 +1,9 @@
 <template>
   <v-app-bar color="transparent" app absolute flat dark>
     <v-row align-content="center">
+      <v-avatar class="mt-12 ml-12" size="120">
+        <v-img src="../assets/back1.jpeg" aspect-ratio="1" />
+      </v-avatar>
       <vue-typed-js
         :strings="['capki kim']"
         :type-speed="100"
