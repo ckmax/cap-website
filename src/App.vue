@@ -1,7 +1,7 @@
 <template>
   <v-app>
-    <Toolbar />
     <v-content>
+      <Toolbar />
       <Main id="main" />
       <Panels id="life" />
       <Timeline id="projects" />

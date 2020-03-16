@@ -1,29 +1,67 @@
 <template>
-  <v-app-bar color="transparent" app absolute flat dark>
-    <v-row align-content="center">
-      <v-avatar class="mt-12 ml-12" size="120">
-        <v-img src="../assets/back1.jpeg" aspect-ratio="1" />
-      </v-avatar>
-      <vue-typed-js
-        :strings="['capki kim']"
-        :type-speed="100"
-        :loop="true"
-        :start-delay="2000"
-        class="black--text text-center typed-text ml-6"
-      >
-        <v-toolbar-title class="typing typed-text black--text" />
-      </vue-typed-js>
-      <v-spacer />
-      <v-btn light text tile :ripple="false" class="ma-8" v-scroll-to="'#life'"
-        ><span class="hvr-underline-from-left">Life</span></v-btn
-      >
-      <v-btn light text tile class="ma-8" v-scroll-to="'#projects'"
-        ><span class="hvr-underline-from-left">Projects</span></v-btn
-      >
-      <v-btn light text tile class="ma-8"
-        ><span class="hvr-underline-from-left">Over time</span></v-btn
-      >
-    </v-row>
+  <v-app-bar
+    v-scroll-reveal.reset="{ delay: 3000 }"
+    color="transparent"
+    height="125"
+    flat
+    dark
+  >
+    <v-container fluid>
+      <v-row justify="space-between" align="center">
+        <v-col lg="2" md="2" sm="4" class="mt-4">
+          <v-img
+            v-scroll-reveal.reset="{
+              rotate: {
+                x: 100,
+                y: 0,
+                z: 0
+              },
+              origin: 'top'
+            }"
+            src="../assets/logo.png"
+            contain
+            max-height="120"
+          />
+        </v-col>
+        <!-- <v-col lg="2" md="3" sm="2">
+          <vue-typed-js
+            :strings="['capki kim']"
+            :type-speed="100"
+            :loop="true"
+            :start-delay="2000"
+            class="black--text text-center typed-text ml-6"
+          >
+            <v-toolbar-title class="typing typed-text black--text" />
+          </vue-typed-js>
+        </v-col> -->
+        <v-col v-scroll-reveal.reset="{ origin: 'top' }" lg="8">
+          <v-row justify="space-around" no-gutters>
+            <v-spacer></v-spacer>
+            <v-col>
+              <v-btn
+                light
+                text
+                tile
+                :ripple="false"
+                class=""
+                v-scroll-to="'#life'"
+                ><span class="hvr-underline-from-left">home</span></v-btn
+              >
+            </v-col>
+            <v-col>
+              <v-btn light text tile class="" v-scroll-to="'#projects'"
+                ><span class="hvr-underline-from-left">Projects</span></v-btn
+              >
+            </v-col>
+            <v-col>
+              <v-btn light text tile
+                ><span class="hvr-underline-from-left">Over time</span></v-btn
+              >
+            </v-col>
+          </v-row>
+        </v-col>
+      </v-row>
+    </v-container>
   </v-app-bar>
 </template>
 
@@ -71,5 +109,9 @@
 
 .theme--light.v-btn:hover::before {
   opacity: 0;
+}
+
+.rotate3d {
+  transform: rotate3d(1, 1, 1, 45deg);
 }
 </style>
