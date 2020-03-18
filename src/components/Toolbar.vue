@@ -1,6 +1,7 @@
 <template>
   <v-app-bar
     v-scroll-reveal.reset="{ delay: 3000 }"
+    absolute
     color="transparent"
     height="125"
     flat
@@ -11,11 +12,6 @@
         <v-col lg="2" md="2" sm="4" class="mt-4">
           <v-img
             v-scroll-reveal.reset="{
-              rotate: {
-                x: 100,
-                y: 0,
-                z: 0
-              },
               origin: 'top'
             }"
             src="../assets/logo.png"
@@ -45,7 +41,7 @@
                 :ripple="false"
                 class=""
                 v-scroll-to="'#life'"
-                ><span class="hvr-underline-from-left">home</span></v-btn
+                ><span class="hvr-underline-from-left">About</span></v-btn
               >
             </v-col>
             <v-col>

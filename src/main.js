@@ -11,7 +11,7 @@ import VueScrollReveal from "vue-scroll-reveal";
 
 Vue.use(VueScrollReveal, {
   distance: "50px",
-  duration: 1500
+  duration: 1000
 });
 Vue.use(VueTypedJs);
 Vue.use(VueScrollTo);

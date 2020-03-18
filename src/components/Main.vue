@@ -1,21 +1,26 @@
 <template>
-  <v-container fluid>
-    <div class="full-page" v-scroll-reveal>
-      <h1 class="main-text centered">
-        Hi, I'm
+  <div class="full-page" v-scroll-reveal>
+    <h1 class="main-text centered" v-scroll-reveal>
+      Hi, I'm
 
-        <vue-typed-js
-          :strings="['Capki Kim.']"
-          :type-speed="100"
-          :loop="false"
-          :start-delay="1000"
-          class="text-center typed-bar ml-6"
-        >
-          <v-toolbar-title class="typing typed-text" />
-        </vue-typed-js>
-      </h1>
-
-      <!-- <v-img
+      <vue-typed-js
+        v-scroll-reveal
+        :strings="['Capki Kim.']"
+        :type-speed="100"
+        :loop="false"
+        :start-delay="1000"
+        class="text-center typed-bar ml-6"
+      >
+        <v-toolbar-title v-scroll-reveal class="typing typed-text" />
+      </vue-typed-js>
+      <v-img
+        v-scroll-reveal
+        contain
+        max-height="150"
+        src="../assets/pinwheel.png"
+      ></v-img>
+    </h1>
+    <!-- <v-img
         v-scroll-reveal.reset="{ delay: 250 }"
         src="../assets/cap-logo-left.svg"
         aspect-ratio="1"
@@ -23,8 +28,7 @@
         height="60vh"
         class="logo-img"
       />-->
-    </div>
-  </v-container>
+  </div>
 </template>
 
 <script>
@@ -40,7 +44,7 @@
 }
 .centered {
   position: absolute; /* or absolute */
-  top: 45%;
+  top: 55%;
   left: 50%;
   /* bring your own prefixes */
   width: 90%;
@@ -48,9 +52,10 @@
 }
 
 .full-page {
-  /* background: url('../assets/keyboard.jpeg') no-repeat center center fixed; */
-  height: 90vh;
+  /* background: url("../assets/keyboard.jpeg") no-repeat center center fixed; */
+  height: 100vh;
   position: relative;
+  background-color: #f8f1ea;
   /* background-position: center;
   background-repeat: no-repeat;
   background-size: cover; */
@@ -58,20 +63,20 @@
 
 .typed-text {
   font-weight: 500;
-  font-size: 15vh !important;
+  font-size: 17vh !important;
   /* color: #f3a9a9; */
   color: black;
 }
 
 .typed-bar {
-  font-weight: 500;
-  font-size: 15vh !important;
+  font-weight: 300;
+  font-size: 17vh !important;
   color: #f3a9a9;
   /* color: #b0cfe0; */
 }
 
 .main-text {
   font-weight: 300;
-  font-size: 15vh;
+  font-size: 17vh;
 }
 </style>

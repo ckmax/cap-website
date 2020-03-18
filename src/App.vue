@@ -3,6 +3,7 @@
     <v-content>
       <Toolbar />
       <Main id="main" />
+      <About />
       <Panels id="life" />
       <Timeline id="projects" />
       <!-- <div
@@ -22,9 +23,10 @@
 
 <script>
 import Vue from "vue";
-import Cursor from "./components/Cursor.vue";
-import Panels from "./components/Panels.vue";
-import Main from "./components/Main.vue";
+import Cursor from "@/components/Cursor";
+import Panels from "@/views/Panels";
+import Main from "@/components/Main";
+import About from "@/views/About";
 import Timeline from "@/components/Timeline";
 import Toolbar from "@/components/Toolbar";
 
@@ -35,6 +37,7 @@ export default Vue.extend({
     Cursor,
     Main,
     Timeline,
+    About,
     Toolbar
   },
   data: () => {
@@ -79,11 +82,11 @@ export default Vue.extend({
 </script>
 
 <style lang="scss">
-body,
-html {
-  // cursor: none;
-  background: white;
-}
+// body,
+// html {
+//   // cursor: none;
+//   // background: #1d1f26;
+// }
 
 .g-cursor {
   &_hide {
@@ -142,9 +145,9 @@ html {
   float: right;
 }
 
-.v-image__image {
-  margin-left: 20px !important;
-}
+// .v-image__image {
+//   margin-left: 20px !important;
+// }
 
 .v-application--wrap {
   // background: url("./assets/back4.jpeg") no-repeat center center fixed;
@@ -153,5 +156,15 @@ html {
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+}
+
+.full-page {
+  /* background: url("../assets/keyboard.jpeg") no-repeat center center fixed; */
+  height: 100vh;
+  position: relative;
+  // background-color: #f8f1ea;
+  /* background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; */
 }
 </style>
